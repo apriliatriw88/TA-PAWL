@@ -1,0 +1,70 @@
+{% include 'header.html' %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Barang Masuk</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="/formbarangmasuk">Tambah</a></li>
+              <!-- <li class="breadcrumb-item"><a href="/masterbarang">Data</a></li> -->
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12"> 
+            <!-- general form elements -->
+            <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Tambah Barang</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form role="form" action="/simpanformbarangmasuk" method="POST">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="nama">Nama</label>
+                      <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="harga">Tanggal</label>
+                        <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="stock">Jumlah</label>
+                        <input type="text" class="form-control" id="jumlah" name="jumlah" placeholder="Jumlah">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stock">Keterangan</label>
+                        <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan">
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+  
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card -->  
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  {% include 'footer.html' %}
